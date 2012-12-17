@@ -25,7 +25,7 @@
 			<?php $attachment_id = get_field('thumbnail'); ?>
 			<?php $size = "thumbnail"; ?>
 			<?php	$thumbnail = wp_get_attachment_image( $attachment_id, $size ); ?>
-			<div class="row">
+			<div class="row fightthepower">
 				<picture class="thumbnail">
 					<?php echo( $thumbnail ); ?>
 				</picture>
