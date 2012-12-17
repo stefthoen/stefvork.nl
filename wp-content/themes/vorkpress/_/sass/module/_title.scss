@@ -1,0 +1,9 @@
+.title {
+	@include grid(38, 1, 0);
+	a {
+		font-family: $font-display;
+		font-size: $font-display-huge;
+		//text-transform: uppercase;
+		color: $color-two;
+	}
+}

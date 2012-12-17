@@ -1,0 +1,32 @@
+$font-body-tiny: 7.111px;
+$font-body-small: 10.667px;
+$font-body-normal: 16px;
+$font-body-large: 24px;
+$font-body-huge: 36px;
+
+$font-display-tiny: 14.222px;
+$font-display-small: 21.333px;
+$font-display-normal: 27px;
+$font-display-large: 48px;
+$font-display-huge: 72px;
+
+$font-display: "League Gothic"; 
+$font-body: "Verdana"; 
+
+@font-face { 
+	font-family: 'Knewave';
+	src: url('_/fonts/knewave-webfont.eot');
+	src: url('_/fonts/knewave-webfont?#iefix') format('embedded-opentype'),
+	     url('_/fonts/knewave-webfont.woff') format('woff'),
+	     url('_/fonts/knewave-webfont.ttf') format('truetype'),
+	     url('_/fonts/knewave-webfont.svg#knewave') format('svg');
+}
+
+@font-face { 
+	font-family: 'League Gothic';
+	src: url('_/fonts/leaguegothic-regular-webfont.eot');
+	src: url('_/fonts/leaguegothic-regular-webfont?#iefix') format('embedded-opentype'),
+	     url('_/fonts/leaguegothic-regular-webfont.woff') format('woff'),
+	     url('_/fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+	     url('_/fonts/leaguegothic-regular-webfont.svg#leaguegothic') format('svg');
+}

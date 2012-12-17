@@ -1,0 +1,9 @@
+.artist {
+	@include grid(38, 1, 0);
+	padding: .2em;
+	font-size: $font-display-small;
+	font-family: $font-display;
+	color: lighten($color-two, 40%);
+	background-color: lighten($color-one, 3%);
+	border-top: 1px solid lighten($color-one, 5%);
+}

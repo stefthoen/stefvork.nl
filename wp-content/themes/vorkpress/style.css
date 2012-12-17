@@ -1,0 +1,222 @@
+/*
+Theme Name:  ForkPress
+Theme URI:   http://baardbaard.nl
+Description: "Het is kut of niet kut."
+Version:     1.0
+Author:      Baardbaard
+AuthorURI:   http://stefvork.nl
+Tags:        starkers, music, reviews, clean, basic
+*/
+/* line 17, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+@font-face {
+  font-family: 'Knewave';
+  src: url("_/fonts/knewave-webfont.eot");
+  src: url("_/fonts/knewave-webfont?#iefix") format("embedded-opentype"), url("_/fonts/knewave-webfont.woff") format("woff"), url("_/fonts/knewave-webfont.ttf") format("truetype"), url("_/fonts/knewave-webfont.svg#knewave") format("svg"); }
+
+@font-face {
+  font-family: 'League Gothic';
+  src: url("_/fonts/leaguegothic-regular-webfont.eot");
+  src: url("_/fonts/leaguegothic-regular-webfont?#iefix") format("embedded-opentype"), url("_/fonts/leaguegothic-regular-webfont.woff") format("woff"), url("_/fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("_/fonts/leaguegothic-regular-webfont.svg#leaguegothic") format("svg"); }
+
+/* line 1, _/sass/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 5, _/sass/_base.scss */
+body {
+  background-color: #f0f0f0;
+  color: #3c3c3c;
+  line-height: 1;
+  font-family: "Verdana";
+  font-size: 16px; }
+
+/* line 13, _/sass/_base.scss */
+a {
+  text-decoration: none; }
+
+/* Use this mixin to reset your grid by example for your mobile grid */
+/* The clearfix mixin is necessary for the floats */
+/* line 1, _/sass/layout/_l-wrapper.scss */
+.l-wrapper {
+  max-width: auto/16pxem; }
+
+/* line 1, _/sass/layout/_l-header.scss */
+.l-header {
+  float: left;
+  width: 95.83333%;
+  margin-left: 2.08333%;
+  margin-right: 2.08333%;
+  margin-bottom: 1em;
+  background-color: #f0f0f0; }
+
+/* line 1, _/sass/module/_logo.scss */
+.logo {
+  float: left;
+  width: 20.83333%;
+  margin-left: 0%;
+  margin-right: 0%; }
+  /* line 3, _/sass/module/_logo.scss */
+  .logo img {
+    width: 100%; }
+
+/* line 1, _/sass/module/_title.scss */
+.title {
+  float: left;
+  width: 77.08333%;
+  margin-left: 2.08333%;
+  margin-right: 0%; }
+  /* line 3, _/sass/module/_title.scss */
+  .title a {
+    font-family: "League Gothic";
+    font-size: 72px;
+    color: #3c3c3c; }
+
+/* line 1, _/sass/module/_divider.scss */
+.divider {
+  color: #c80000;
+  font-family: "League Gothic";
+  font-size: 48px;
+  letter-spacing: -0.2em; }
+
+/* line 1, _/sass/module/_byline.scss */
+.byline {
+  display: none;
+  float: left;
+  width: 77.08333%;
+  margin-left: 2.08333%;
+  margin-right: 0%;
+  font-family: "Verdana";
+  font-size: 16px;
+  vertical-align: bottom; }
+
+/* line 1, _/sass/module/_review.scss */
+.review {
+  float: left;
+  width: 95.83333%;
+  margin-left: 2.08333%;
+  margin-right: 2.08333%;
+  margin-bottom: .6em; }
+
+/* line 1, _/sass/module/_row.scss */
+.row {
+  float: left;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative; }
+
+/* line 1, _/sass/module/_thumbnail.scss */
+.thumbnail {
+  float: left;
+  width: 20.83333%;
+  margin-left: 0%;
+  margin-right: 0%; }
+  /* line 3, _/sass/module/_thumbnail.scss */
+  .thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+/* line 1, _/sass/module/_artist.scss */
+.artist {
+  float: left;
+  width: 77.08333%;
+  margin-left: 2.08333%;
+  margin-right: 0%;
+  padding: .2em;
+  font-size: 21.333px;
+  font-family: "League Gothic";
+  color: #a2a2a2;
+  background-color: #f8f8f8;
+  border-top: 1px solid #fdfdfd; }
+
+/* line 1, _/sass/module/_album.scss */
+.album {
+  float: left;
+  width: 77.08333%;
+  margin-left: 2.08333%;
+  margin-right: 0%;
+  padding: 4px;
+  min-height: 63px;
+  font-family: "League Gothic";
+  font-size: 27px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #f3f3f3; }
+
+/* line 1, _/sass/module/_verdict.scss */
+.verdict {
+  float: left;
+  width: 20.83333%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: .2em 0;
+  font-family: "League Gothic";
+  font-size: 21.333px;
+  text-transform: uppercase;
+  text-align: center; }
+
+/* line 10, _/sass/module/_verdict.scss */
+.is-kut {
+  background-color: #c80000;
+  color: #f0f0f0; }
+
+/* line 15, _/sass/module/_verdict.scss */
+.is-nietkut {
+  background-color: #ffcc00; }

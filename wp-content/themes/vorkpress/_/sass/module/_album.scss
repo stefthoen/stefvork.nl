@@ -1,0 +1,9 @@
+.album {
+	@include grid(38, 1, 0);
+	padding: 4px;
+	min-height: 63px;
+	font-family: $font-display;
+	font-size: $font-display-normal;
+	background-color: lighten($color-one, 3%);
+	border-bottom: 1px solid lighten($color-one, 1%);
+}

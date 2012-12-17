@@ -1,0 +1,6 @@
+.byline {
+	@include grid(14, 1, 0);
+	font-family: $font-display;
+	font-size: $font-display-tiny;
+	vertical-align: bottom;
+}

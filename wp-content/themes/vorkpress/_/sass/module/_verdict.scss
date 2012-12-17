@@ -1,0 +1,17 @@
+.verdict {
+	@include grid(10);
+	padding: .2em 0;
+	font-family: $font-display;
+	font-size: $font-display-small;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.is-kut {
+	background-color: $color-three;
+	color: $color-one;
+}
+
+.is-nietkut {
+	background-color: $color-four;
+}

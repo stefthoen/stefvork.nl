@@ -1,0 +1,7 @@
+.byline {
+	display: none;
+	@include grid(38, 1, 0);
+	font-family: $font-body;
+	font-size: $font-body-normal;
+	vertical-align: bottom;
+}

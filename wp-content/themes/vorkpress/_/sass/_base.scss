@@ -1,0 +1,15 @@
+* {
+	@include box-sizing(border-box);
+}
+
+body {
+	background-color: $color-one;
+	color: $color-two;
+	line-height: 1;
+	font-family: $font-body;
+	font-size: $font-body-normal;
+}
+
+a {
+	text-decoration: none;
+}

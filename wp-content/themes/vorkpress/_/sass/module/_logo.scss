@@ -1,0 +1,6 @@
+.logo {
+	@include grid(10);
+	img {
+		width: 100%;
+	}
+}
