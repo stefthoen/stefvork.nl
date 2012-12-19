@@ -16,6 +16,7 @@
 <?php Starkers_Utilities::get_template_parts( array( '_/parts/shared/html-header', '_/parts/shared/header' ) ); ?>
 
 <?php if ( have_posts() ): ?>
+<h2>Wie is de koning? Ik ben de koning!</h2>
 <ol>
 <?php while ( have_posts() ) : the_post(); ?>
 	<li>
