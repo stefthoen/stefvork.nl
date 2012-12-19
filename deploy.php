@@ -1,6 +1,6 @@
 <?php
 
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('Europe/Amsterdam');
 
 class Deploy {
 
@@ -17,7 +17,7 @@ class Deploy {
   * 
   * @var string
   */
-  private $_log = 'deployments.log';
+  private $_log = '../../logs/user/deployments.log';
 
   /**
   * The timestamp format used for logging.
