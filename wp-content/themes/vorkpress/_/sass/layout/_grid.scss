@@ -17,9 +17,9 @@ $margin-bottom: 1.25em;
 
 // Set up mobile-first or desktop-first
 $media-type: max-width;
-$media-desktop: 960px;
-$media-tablet: 767px;
-$media-phone: 520px;
+$column-two: 640px;
+$column-three: 960px;
+$column-four: 1280px;
 
 // Use '@include grid(12, 2)' to make a column. 
 // The first unit (12) is the column width.

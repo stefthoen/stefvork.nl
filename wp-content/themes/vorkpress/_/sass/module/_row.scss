@@ -1,4 +1,5 @@
 .row {
 	@include grid(48);
 	position: relative;
+	background-color: lighten($color-one, 3%);
 }

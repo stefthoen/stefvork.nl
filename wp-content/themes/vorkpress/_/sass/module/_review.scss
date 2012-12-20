@@ -1,4 +1,13 @@
 .review {
-	@include grid(48, 1);
+	@include grid(48, 0, 1);
 	margin-bottom: .6em;
+	@media only screen and (min-width: $column-two) { 
+		@include grid(24, 0, 1);
+	}
+	@media only screen and (min-width: $column-three) { 
+		@include grid(16, 0, 1);
+	}
+	@media only screen and (min-width: $column-four) { 
+		@include grid(12, 0, 1);
+	}
 }

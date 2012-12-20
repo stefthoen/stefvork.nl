@@ -16,7 +16,7 @@
 <?php Starkers_Utilities::get_template_parts( array( '_/parts/shared/html-header', '_/parts/shared/header' ) ); ?>
 
 <?php if ( have_posts() ): ?>
-<ol>
+<ol class="reviews">
 <?php while ( have_posts() ) : the_post(); ?>
 	<li>
 		<article class="review">

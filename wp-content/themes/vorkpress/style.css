@@ -95,16 +95,44 @@ a {
 /* The clearfix mixin is necessary for the floats */
 /* line 1, _/sass/layout/_l-wrapper.scss */
 .l-wrapper {
-  max-width: auto/16pxem; }
+  float: left;
+  width: 95.83333%;
+  margin-left: 2.08333%;
+  margin-right: 2.08333%; }
 
 /* line 1, _/sass/layout/_l-header.scss */
 .l-header {
   float: left;
-  width: 95.83333%;
-  margin-left: 2.08333%;
-  margin-right: 2.08333%;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   margin-bottom: 1em;
   background-color: #f0f0f0; }
+  @media only screen and (min-width: 640px) {
+    /* line 1, _/sass/layout/_l-header.scss */
+    .l-header {
+      float: left;
+      width: 47.91667%;
+      margin-left: 0%;
+      margin-right: 2.08333%; } }
+  @media only screen and (min-width: 960px) {
+    /* line 1, _/sass/layout/_l-header.scss */
+    .l-header {
+      float: left;
+      width: 31.25%;
+      margin-left: 0%;
+      margin-right: 2.08333%; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 1, _/sass/layout/_l-header.scss */
+    .l-header {
+      float: left;
+      width: 22.91667%;
+      margin-left: 0%;
+      margin-right: 2.08333%; } }
+
+/* line 1, _/sass/layout/_l-reviews.scss */
+.reviews {
+  clear: left; }
 
 /* line 1, _/sass/module/_logo.scss */
 .logo {
@@ -149,10 +177,31 @@ a {
 /* line 1, _/sass/module/_review.scss */
 .review {
   float: left;
-  width: 95.83333%;
-  margin-left: 2.08333%;
+  width: 97.91667%;
+  margin-left: 0%;
   margin-right: 2.08333%;
   margin-bottom: .6em; }
+  @media only screen and (min-width: 640px) {
+    /* line 1, _/sass/module/_review.scss */
+    .review {
+      float: left;
+      width: 47.91667%;
+      margin-left: 0%;
+      margin-right: 2.08333%; } }
+  @media only screen and (min-width: 960px) {
+    /* line 1, _/sass/module/_review.scss */
+    .review {
+      float: left;
+      width: 31.25%;
+      margin-left: 0%;
+      margin-right: 2.08333%; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 1, _/sass/module/_review.scss */
+    .review {
+      float: left;
+      width: 22.91667%;
+      margin-left: 0%;
+      margin-right: 2.08333%; } }
 
 /* line 1, _/sass/module/_row.scss */
 .row {
@@ -160,7 +209,8 @@ a {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  position: relative; }
+  position: relative;
+  background-color: #f8f8f8; }
 
 /* line 1, _/sass/module/_thumbnail.scss */
 .thumbnail {
@@ -193,12 +243,14 @@ a {
   width: 77.08333%;
   margin-left: 2.08333%;
   margin-right: 0%;
-  padding: 4px;
-  min-height: 63px;
+  padding: .2em;
   font-family: "League Gothic";
   font-size: 27px;
-  background-color: #f8f8f8;
-  border-bottom: 1px solid #f3f3f3; }
+  background-color: #f8f8f8; }
+  /* line 7, _/sass/module/_album.scss */
+  .album p {
+    position: absolute;
+    bottom: 0; }
 
 /* line 1, _/sass/module/_verdict.scss */
 .verdict {
