@@ -96,9 +96,30 @@ a {
 /* line 1, _/sass/layout/_l-wrapper.scss */
 .l-wrapper {
   float: left;
-  width: 97.91667%;
+  width: 95.83333%;
   margin-left: 2.08333%;
-  margin-right: 0%; }
+  margin-right: 2.08333%; }
+  @media only screen and (min-width: 640px) {
+    /* line 1, _/sass/layout/_l-wrapper.scss */
+    .l-wrapper {
+      float: left;
+      width: 47.91667%;
+      margin-left: 2.08333%;
+      margin-right: 0%; } }
+  @media only screen and (min-width: 960px) {
+    /* line 1, _/sass/layout/_l-wrapper.scss */
+    .l-wrapper {
+      float: left;
+      width: 31.25%;
+      margin-left: 2.08333%;
+      margin-right: 0%; } }
+  @media only screen and (min-width: 1280px) {
+    /* line 1, _/sass/layout/_l-wrapper.scss */
+    .l-wrapper {
+      float: left;
+      width: 22.91667%;
+      margin-left: 2.08333%;
+      margin-right: 0%; } }
 
 /* line 1, _/sass/layout/_l-header.scss */
 .l-header {

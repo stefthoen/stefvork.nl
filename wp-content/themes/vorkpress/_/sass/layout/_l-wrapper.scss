@@ -1,3 +1,12 @@
 .l-wrapper {
-	@include grid(48, 1, 0);
+	@include grid(48, 1);
+	@media only screen and (min-width: $column-two) { 
+		@include grid(24, 1, 0);
+	}
+	@media only screen and (min-width: $column-three) { 
+		@include grid(16, 1, 0);
+	}
+	@media only screen and (min-width: $column-four) { 
+		@include grid(12, 1, 0);
+	}
 }
