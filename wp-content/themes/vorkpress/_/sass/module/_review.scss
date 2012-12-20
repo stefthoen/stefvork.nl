@@ -1,5 +1,5 @@
 .review {
-	@include grid(48, 0, 1);
+	@include grid(48);
 	margin-bottom: .6em;
 	@media only screen and (min-width: $column-two) { 
 		@include grid(24, 0, 1);

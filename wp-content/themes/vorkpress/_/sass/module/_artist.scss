@@ -1,6 +1,6 @@
 .artist {
 	@include grid(38, 1, 0);
-	padding: .2em;
+	padding: .2em .3em;
 	font-size: $font-display-small;
 	font-family: $font-display;
 	color: lighten($color-two, 40%);

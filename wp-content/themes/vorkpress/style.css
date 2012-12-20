@@ -96,9 +96,9 @@ a {
 /* line 1, _/sass/layout/_l-wrapper.scss */
 .l-wrapper {
   float: left;
-  width: 95.83333%;
+  width: 97.91667%;
   margin-left: 2.08333%;
-  margin-right: 2.08333%; }
+  margin-right: 0%; }
 
 /* line 1, _/sass/layout/_l-header.scss */
 .l-header {
@@ -177,9 +177,9 @@ a {
 /* line 1, _/sass/module/_review.scss */
 .review {
   float: left;
-  width: 97.91667%;
+  width: 100%;
   margin-left: 0%;
-  margin-right: 2.08333%;
+  margin-right: 0%;
   margin-bottom: .6em; }
   @media only screen and (min-width: 640px) {
     /* line 1, _/sass/module/_review.scss */
@@ -230,7 +230,7 @@ a {
   width: 77.08333%;
   margin-left: 2.08333%;
   margin-right: 0%;
-  padding: .2em;
+  padding: .2em .3em;
   font-size: 21.333px;
   font-family: "League Gothic";
   color: #a2a2a2;
@@ -250,7 +250,7 @@ a {
   /* line 7, _/sass/module/_album.scss */
   .album p {
     position: absolute;
-    bottom: 0; }
+    bottom: .2em; }
 
 /* line 1, _/sass/module/_verdict.scss */
 .verdict {
