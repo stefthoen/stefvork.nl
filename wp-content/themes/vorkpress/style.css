@@ -103,21 +103,21 @@ a {
     /* line 1, _/sass/layout/_l-wrapper.scss */
     .l-wrapper {
       float: left;
-      width: 47.91667%;
+      width: 97.91667%;
       margin-left: 2.08333%;
       margin-right: 0%; } }
   @media only screen and (min-width: 960px) {
     /* line 1, _/sass/layout/_l-wrapper.scss */
     .l-wrapper {
       float: left;
-      width: 31.25%;
+      width: 97.91667%;
       margin-left: 2.08333%;
       margin-right: 0%; } }
   @media only screen and (min-width: 1280px) {
     /* line 1, _/sass/layout/_l-wrapper.scss */
     .l-wrapper {
       float: left;
-      width: 22.91667%;
+      width: 97.91667%;
       margin-left: 2.08333%;
       margin-right: 0%; } }
 
