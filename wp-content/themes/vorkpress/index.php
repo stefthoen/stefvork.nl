@@ -20,20 +20,27 @@
 <?php while ( have_posts() ) : the_post(); ?>
 	<li>
 		<article class="review">
-			<?php $verdict = get_field('verdict'); ?>
-			<?php $verdict_class = 'is-' . strtolower( str_replace( ' ', '', $verdict ) ); ?>
-			<?php $attachment_id = get_field('thumbnail'); ?>
-			<?php $size = "thumbnail"; ?>
-			<?php	$thumbnail = wp_get_attachment_image( $attachment_id, $size ); ?>
-			<div class="row">
-				<picture class="thumbnail">
-					<?php echo( $thumbnail ); ?>
-				</picture>
-				<span class="album"><p><?php the_field('album'); ?></p></span>
-			</div>
-			<div class="row">
-				<span class="verdict <?php echo $verdict_class; ?>"><?php echo $verdict; ?></span>
-				<span class="artist"><p><?php the_field('artist'); ?></p></span>
+			<div class="flipper">
+				<div class="front">
+					<?php $verdict = get_field('verdict'); ?>
+					<?php $verdict_class = 'is-' . strtolower( str_replace( ' ', '', $verdict ) ); ?>
+					<?php $attachment_id = get_field('thumbnail'); ?>
+					<?php $size = "thumbnail"; ?>
+					<?php	$thumbnail = wp_get_attachment_image( $attachment_id, $size ); ?>
+					<div class="row">
+						<picture class="thumbnail">
+							<?php echo( $thumbnail ); ?>
+						</picture>
+						<span class="album"><p><?php the_field('album'); ?></p></span>
+					</div>
+					<div class="row">
+						<span class="verdict <?php echo $verdict_class; ?>"><?php echo $verdict; ?></span>
+						<span class="artist"><p><?php the_field('artist'); ?></p></span>
+					</div>
+				</div>
+				<div class="back">
+					<span class="why"><?php the_field('why'); ?>yoyoyo</span>
+				</div>
 			</div>
 		</article>
 	</li>

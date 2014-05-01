@@ -1,13 +1,52 @@
 .review {
-	@include grid(48);
-	margin-bottom: .6em;
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	//@include grid(48);
+	//margin-bottom: .6em;
+	perspective: 1000;
+	&:hover {
+		//@include box-shadow(rgba($color-two, 0.4) 0 0 25px);
+		cursor: pointer;
+		.flipper {
+			-webkit-transform: rotateY(180deg);
+		}
+	}
 	@media only screen and (min-width: $column-two) { 
-		@include grid(24, 0, 1);
+		//@include grid(24, 0, 1);
 	}
 	@media only screen and (min-width: $column-three) { 
-		@include grid(16, 0, 1);
+		//@include grid(16, 0, 1);
 	}
 	@media only screen and (min-width: $column-four) { 
-		@include grid(12, 0, 1);
+		//@include grid(12, 0, 1);
 	}
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+	position: relative;
+}
+
+.review, .front, .back {
+	width: 320px;
+	height: 100px;
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+}
+
+.back {
+	-webkit-transform: rotateY(180deg);
+	background-color: $color-three;
+	color: $color-two;
 }

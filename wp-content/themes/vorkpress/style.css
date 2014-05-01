@@ -198,31 +198,43 @@ a {
 /* line 1, _/sass/module/_review.scss */
 .review {
   float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-bottom: .6em; }
-  @media only screen and (min-width: 640px) {
-    /* line 1, _/sass/module/_review.scss */
-    .review {
-      float: left;
-      width: 47.91667%;
-      margin-left: 0%;
-      margin-right: 2.08333%; } }
-  @media only screen and (min-width: 960px) {
-    /* line 1, _/sass/module/_review.scss */
-    .review {
-      float: left;
-      width: 31.25%;
-      margin-left: 0%;
-      margin-right: 2.08333%; } }
-  @media only screen and (min-width: 1280px) {
-    /* line 1, _/sass/module/_review.scss */
-    .review {
-      float: left;
-      width: 22.91667%;
-      margin-left: 0%;
-      margin-right: 2.08333%; } }
+  margin-top: 10px;
+  margin-right: 10px;
+  perspective: 1000; }
+  /* line 8, _/sass/module/_review.scss */
+  .review:hover {
+    cursor: pointer; }
+    /* line 11, _/sass/module/_review.scss */
+    .review:hover .flipper {
+      -webkit-transform: rotateY(180deg); }
+
+/* line 26, _/sass/module/_review.scss */
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  position: relative; }
+
+/* line 32, _/sass/module/_review.scss */
+.review, .front, .back {
+  width: 320px;
+  height: 100px; }
+
+/* line 37, _/sass/module/_review.scss */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 44, _/sass/module/_review.scss */
+.front {
+  z-index: 2; }
+
+/* line 48, _/sass/module/_review.scss */
+.back {
+  -webkit-transform: rotateY(180deg);
+  background-color: #c80000;
+  color: #3c3c3c; }
 
 /* line 1, _/sass/module/_row.scss */
 .row {
@@ -279,7 +291,7 @@ a {
   width: 20.83333%;
   margin-left: 0%;
   margin-right: 0%;
-  padding: .2em 0;
+  padding: .2em .3em;
   font-family: "League Gothic";
   font-size: 21.333px;
   text-transform: uppercase;
